@@ -43,7 +43,8 @@ O protótipo será migrado para Vue.js, onde:
 - A interface será componentizada  
 - A estrutura será organizada em Single File Components  
 - O estado será controlado de forma reativa  
-- A navegação será implementada dinamicamente  
+- A navegação será implementada dinamicamente
+- LAZY LANDING  SERA IMPLEMENTADO PRA TORNA O CAARREGAMENTO RAPIDO  
 
 ---
 
