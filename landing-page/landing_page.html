@@ -79,6 +79,49 @@
       <div class="auth-title">Criar conta</div>
       <div class="auth-sub">Comece a usar Cronos gratuitamente. Sem cartão.</div>
 
+      <!-- ══ ROLE SELECTOR ══ -->
+      <div class="auth-field">
+        <label class="auth-label">Você é um…</label>
+        <div class="auth-role-group" id="roleGroup">
+
+          <button class="auth-role-btn" type="button" data-role="employee" onclick="selectRole('employee', this)">
+            <span class="auth-role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </span>
+            <span class="auth-role-text">
+              <span class="auth-role-title">Funcionário</span>
+              <span class="auth-role-desc">Acesso a tarefas e projetos da equipe</span>
+            </span>
+            <span class="auth-role-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+          </button>
+
+          <button class="auth-role-btn" type="button" data-role="manager" onclick="selectRole('manager', this)">
+            <span class="auth-role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+                <line x1="12" y1="12" x2="12" y2="16"/>
+                <line x1="10" y1="14" x2="14" y2="14"/>
+              </svg>
+            </span>
+            <span class="auth-role-text">
+              <span class="auth-role-title">Gerente</span>
+              <span class="auth-role-desc">Cria projetos, gerencia equipe e métricas</span>
+            </span>
+            <span class="auth-role-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+          </button>
+
+        </div>
+      </div>
+      <!-- ══ END ROLE SELECTOR ══ -->
+
       <div class="auth-field">
         <label class="auth-label">Nome completo</label>
         <div class="auth-input-wrap">

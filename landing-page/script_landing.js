@@ -303,3 +303,16 @@ function sendReset() {
   if (rf) rf.style.display = 'none';
   if (rs) rs.classList.add('show');
 }
+
+// ── ROLE SELECTOR ──
+// Tracks the currently selected role. Exposed on window for form submission access.
+window._selectedRole = null;
+
+function selectRole(role, btn) {
+  // Deselect all role buttons
+  document.querySelectorAll('.auth-role-btn').forEach(b => b.classList.remove('selected'));
+  // Select the clicked one
+  btn.classList.add('selected');
+  // Store selection
+  window._selectedRole = role;
+}
