@@ -51,4 +51,5 @@ O protótipo será migrado para Vue.js, onde:
 ## Status do Projeto
 
 Protótipo estrutural concluído  
-Migração para Vue.js em planejamento
+----------------------------------
+nova abordagem será em react native e desenvolvimento mobile
